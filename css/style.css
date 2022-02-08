@@ -1,3 +1,23 @@
+header {
+  text-align: center;
+  color: aqua;
+  font: 2rem sans-serif;
+}
+
 body {
-  background-color: lightgrey;
+  background-color: rgb(12, 12, 12);
+  line-height: 2;
+
+  border: 0.5rem outset yellow;
+  box-shadow: 0 0 0 1rem skyblue;
+  border-radius: 42px;
+  font: sans-serif;
+  color: yellow;
+  margin: 2rem;
+  padding: 1rem;
+  outline-offset: 0.5rem;
+}
+
+p {
+  text-align: center;
 }

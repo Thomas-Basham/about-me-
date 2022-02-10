@@ -2,6 +2,8 @@
 
 console.log('well hey there');
 
+let counter = 0;
+
 let userName = prompt('Hello!, What is your name?');
 console.log('user entered ' + userName);
 alert(`Welcome ${userName}! Can you guess the answer to these questions? (yes or no answer's only)`);
@@ -10,6 +12,7 @@ let answerOne = prompt('Am I a vegetarian?').toLowerCase();
 console.log('user entered ' + answerOne);
 if (answerOne === 'no' || answerOne === 'n') {
   alert('You are right!');
+  counter++;
 } else if (answerOne === 'yes' || answerOne === 'y') {
   alert('No, I am an omnivore!');
 }
@@ -42,46 +45,57 @@ if (answerFive === 'no' || answerFive === 'n') {
 } else if (answerFive === 'yes' || answerFive === 'y') {
   alert('I do! I enjoy hiking, fishing, hunting, and camping.');
 }
-// let attempts = 0;
+
+//guessing game 
+
+
+      
+
+// let attempts = 4;
+
 // let myNumber = 7;
 
-// let userNumber = prompt('Guess a number between 1 and 10?');
-// console.log('user entered ' + userNumber);
+// while(attempts){
+//   attempts--;
+//   let userNumber = prompt('gGuess a number between 1 and 10?');
 
-// while (userNumber !== myNumber){
-//   alert('you are incorrect');
-//   attempts++;
+//   if(userNumber === myNumber){
+//     alert('Thats the one!');
+//     break;
+//   }else if(userNumber > myNumber){
+//     alert('Too high!');
+//     else {
+//       alert('too low');
+//     }
 
-//   if(userNumber < myNumber){
-//     alert('Too low!');
-//   }
-//   else(userNumber > myNumber);
-//   alert('Too high!');
-// }
-// if(userNumber === myNumber){
-//   alert('Thats the one!');
-// }
-// if(attempts === 3){
-//   alert('You are out of guesses, sorry!');
-// }
+// if(attempts === 0) {
+//   alert(`correct answer was ${myNumber}`)
+//     }
 
-// let colors = [blue, green, yellow];
-// let blue = colors[0];
-// let green = colors[1];
-// let yellow = colors[2];
-
-// let answer7 = prompt('Is my favorite color blue, green, or yellow?').toLowerCase();
-// console.log('user entered ' + answer7);
-
-// if (answer7 !== [blue]){
-//   alert('false!');
-// }
-// else if (answer7 === [blue]){
-//   alert('true!');
-// }
+//  }
 
 
 
 
-alert(`As you've discovered, ${userName}, I'm just an ordinary childless omivore veteran who was raised in the country and like's the outdoors! click ok to read more about me`);
 
+
+let myArr = [blue, green, yellow];
+
+let newAttempts = 6
+
+while(newAttempts){
+  newAttempts--;
+  let colorGuess = prompt('can you guess my favorite color?');
+
+  for(let i = 0; i < myArr.length; i++){
+    if(colorGuess === myArr[i]) {
+      alert('Yay! You are right!);
+      newAttempts = 0;
+    }
+  }
+
+
+
+
+
+// alert(`As you've discovered, ${userName}, I'm just an ordinary childless omivore veteran who was raised in the country and like's the outdoors! click ok to read more about me`);

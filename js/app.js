@@ -31,9 +31,9 @@ if (answerThree === 'no' || answerThree === 'n') {
 let answerFour = prompt('Was I raised in the city?').toLowerCase();
 console.log('user entered ' + answerFour);
 if (answerFour === 'no' || answerFour === 'n') {
-  alert('That\'s right, I grew up in the country');
-} else if (answerFour === 'yes' || answerFour === 'y') {
   alert('Correct! I grew up on a farm with chickens, turkeys, pigs, and a cow.');
+} else if (answerFour === 'yes' || answerFour === 'y') {
+  alert('I was not!');
 }
 let answerFive = prompt('Do I like the outdoors?').toLowerCase();
 console.log('user entered ' + answerFive);
@@ -42,5 +42,46 @@ if (answerFive === 'no' || answerFive === 'n') {
 } else if (answerFive === 'yes' || answerFive === 'y') {
   alert('I do! I enjoy hiking, fishing, hunting, and camping.');
 }
+// let attempts = 0;
+// let myNumber = 7;
+
+// let userNumber = prompt('Guess a number between 1 and 10?');
+// console.log('user entered ' + userNumber);
+
+// while (userNumber !== myNumber){
+//   alert('you are incorrect');
+//   attempts++;
+
+//   if(userNumber < myNumber){
+//     alert('Too low!');
+//   }
+//   else(userNumber > myNumber);
+//   alert('Too high!');
+// }
+// if(userNumber === myNumber){
+//   alert('Thats the one!');
+// }
+// if(attempts === 3){
+//   alert('You are out of guesses, sorry!');
+// }
+
+// let colors = [blue, green, yellow];
+// let blue = colors[0];
+// let green = colors[1];
+// let yellow = colors[2];
+
+// let answer7 = prompt('Is my favorite color blue, green, or yellow?').toLowerCase();
+// console.log('user entered ' + answer7);
+
+// if (answer7 !== [blue]){
+//   alert('false!');
+// }
+// else if (answer7 === [blue]){
+//   alert('true!');
+// }
+
+
+
 
 alert(`As you've discovered, ${userName}, I'm just an ordinary childless omivore veteran who was raised in the country and like's the outdoors! click ok to read more about me`);
+

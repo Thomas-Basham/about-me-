@@ -2,7 +2,7 @@ header {
   text-align: center;
   color: aqua;
   font: 2rem sans-serif;
-}
+} 
 
 body {
   background-color: rgb(12, 12, 12);
@@ -17,7 +17,22 @@ body {
   padding: 1rem;
   outline-offset: 0.5rem;
 }
+body ul {
+  text-align: right;
+  list-style: none;
+}
+
+section 
 
 p {
   text-align: center;
+}
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  font-size: 3em;
+  color: aqua;
 }

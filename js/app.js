@@ -8,16 +8,19 @@ let userName = prompt('Hello!, What is your name?');
 console.log('user entered ' + userName);
 alert(`Welcome ${userName}! Can you guess the answer to these questions? (yes or no answer's only)`);
 
-let answerOne = prompt('Am I a vegetarian?').toLowerCase();
-console.log('user entered ' + answerOne);
-if (answerOne === 'no' || answerOne === 'n') {
-  alert('You are right!');
-  counter++;
-} else if (answerOne === 'yes' || answerOne === 'y') {
-  alert('No, I am an omnivore!');
+function questionOne() {
+  let answerOne = prompt('Am I a vegetarian?').toLowerCase();
+  console.log('user entered ' + answerOne);
+  if (answerOne === 'no' || answerOne === 'n') {
+    alert('You are right!');
+    counter++;
+  } else if (answerOne === 'yes' || answerOne === 'y') {
+    alert('No, I am an omnivore!');
+  }
 }
+questionOne();
 
-let answerTwo = prompt('Was I in the Millitary?').toLowerCase();
+let answerTwo = prompt('Was I in the Military?').toLowerCase();
 console.log('user entered ' + answerTwo);
 if (answerTwo === 'no' || answerTwo === 'n') {
   alert('Oooof!! I was in the Army');
@@ -49,7 +52,7 @@ if (answerFive === 'no' || answerFive === 'n') {
 //guessing game 
 
 
-      
+
 
 // let attempts = 4;
 
@@ -83,12 +86,12 @@ let myArr = [blue, green, yellow];
 
 let newAttempts = 6
 
-while(newAttempts){
+while (newAttempts) {
   newAttempts--;
   let colorGuess = prompt('can you guess my favorite color?');
 
-  for(let i = 0; i < myArr.length; i++){
-    if(colorGuess === myArr[i]) {
+  for (let i = 0; i < myArr.length; i++) {
+    if (colorGuess === myArr[i]) {
       alert('Yay! You are right!);
       newAttempts = 0;
     }

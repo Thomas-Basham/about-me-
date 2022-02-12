@@ -2,12 +2,15 @@
 
 console.log('well hey there');
 
-let counter = 0;
+let counter = 0; //counter for correct guesses in the end
+
+// greeting
 
 let userName = prompt('Hello!, What is your name?');
 console.log('user entered ' + userName);
 alert(`Welcome ${userName}! Can you guess the answer to these questions? (yes or no answer's only)`);
 
+// first question
 function questionOne() {
   let answerOne = prompt('Am I a vegetarian?').toLowerCase();
   console.log('user entered ' + answerOne);
@@ -18,8 +21,11 @@ function questionOne() {
     alert('No, I am an omnivore!');
   }
 }
+
 questionOne();
 
+
+// second question
 function questionTwo() {
   let answerTwo = prompt('Was I in the Military?').toLowerCase();
   console.log('user entered ' + answerTwo);
@@ -32,6 +38,8 @@ function questionTwo() {
 }
 questionTwo();
 
+
+// third question
 function questionThree() {
   let answerThree = prompt('Do you think I have any children?').toLowerCase();
   console.log('user entered ' + answerThree);
@@ -44,6 +52,8 @@ function questionThree() {
 }
 questionThree();
 
+
+// fourth question
 function questionFour() {
   let answerFour = prompt('Was I raised in the city?').toLowerCase();
   console.log('user entered ' + answerFour);
@@ -54,8 +64,10 @@ function questionFour() {
     alert('I was not!');
   }
 }
+
 questionFour();
 
+// fifth question
 function questionFive() {
   let answerFive = prompt('Do I like the outdoors?').toLowerCase();
   console.log('user entered ' + answerFive);
@@ -66,6 +78,7 @@ function questionFive() {
     counter++;
   }
 }
+
 questionFive();
 
 //guessing game

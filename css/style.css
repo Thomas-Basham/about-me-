@@ -1,26 +1,31 @@
 header {
   text-align: center;
-  color: aqua;
+  color: #095484;
   font: 2rem sans-serif;
 } 
 
 body {
-  background-color: rgb(12, 12, 12);
+  background-image: linear-gradient(to right top, #1d1800, #342e0d, #4f4612, #6c5f17, #8b791c, #9e8924, #b19a2c, #c4ab34, #ceb641, #d8c04d, #e3cb59, #edd665);
   line-height: 2;
 
   border: 0.5rem outset yellow;
-  box-shadow: 0 0 0 1rem skyblue;
+  box-shadow: 0 0 0 1rem #095484;
   border-radius: 42px;
   font: sans-serif;
-  color: yellow;
+  color: rgb(2, 2, 0);
   margin: 2rem;
   padding: 1rem;
   outline-offset: 0.5rem;
 }
+
 body ul {
   text-align: right;
   list-style: none;
 }
+
+  hr {
+    border-top: 5px solid #095484;
+  }
 
 section 
 
@@ -34,5 +39,5 @@ footer {
 
 footer p {
   font-size: 3em;
-  color: aqua;
+  color: #095484;
 }

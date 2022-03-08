@@ -21,12 +21,18 @@ body {
 body ul {
   text-align: right;
   list-style: none;
+  border-top: 5px solid #095484;
+  border-width: 30px;
 }
 
-  hr {
-    border-top: 5px solid #095484;
-  }
 
+hr {
+  border: 5px solid #095484;
+  width: 200px;
+  position: relative;
+  right: auto;
+  float: right;
+}
 section 
 
 p {
@@ -35,9 +41,14 @@ p {
 
 footer {
   text-align: center;
+
 }
 
-footer p {
-  font-size: 3em;
-  color: #095484;
+#footp {
+  /* width: 50%; */
+  margin-inline: 35%;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  color: #010c13;
 }
